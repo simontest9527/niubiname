@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// 声明函数将px装化成为rem。
+@function rem($px) {
+    @return $px/37.5 * 1rem;
+}
+// 打开淘宝
+.dktb {
+    width: rem(116);
+    height: rem(36);
+    // box-shadow: rgb(18 18 18 / 25%) 0px 2px 5px;
+    background-color: rgb(255, 80, 0);
+    font-size: rem(14);
+    color: #fff;
+    border-radius: rem(20);
+    display: block;
+    text-align: center;
+    border: none;
+    align-items: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: rem(57);
+    left: 35%;
+    z-index: 999;
+}
+// 顶部搜索框
+header {
+    width: 100%;
+    height: rem(37);
+    background: rgb(255, 133, 42);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 12;
+
+    >.logo {
+        width: rem(35);
+        height: 100%;
+        background: url(../img/下载.png) no-repeat;
+        background-size: 27px 20px;
+        background-position: 9px center;
+    }
+
+    >.ssk {
+        width: rem(324);
+        height: rem(25);
+        margin: 0 auto;
+        background: rgb(255, 78, 34);
+        border-radius: 4px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: rem(5);
+
+        >span:nth-child(1) {
+            color: #fff;
+            line-height: rem(25);
+            font-size: rem(13);
+            font-weight: 600;
+        }
+
+        >span:nth-child(2) {
+            color: rgb(240, 224, 220);
+            line-height: rem(25);
+            font-size: rem(13);
+            font-weight: 600;
+        }
+    }
+}
+// 顶部轮播
+.slideshow {
+    width: 100%;
+    height: rem(120);
+    margin-top: rem(37);
+
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: rem(120);
+        }
+    }
+}
+// 列表
+.nav {
+    width: 100%;
+    height: rem(186);
+
+    >.tu {
+        width: 100%;
+        height: rem(10);
+        background: url(../img/图0.png) no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        margin-bottom: -2px;
+    }
+
+    >.nav_c {
+        width: 100%;
+        height: rem(165);
+.swiper-scrollbar{
+    width: rem(20);
+    left: 50%;
+}
+        .xlb {
+            width: 100%;
+            height: rem(165);
+            display: flex;
+            // flex-direction: row;
+            background: #fff;
+            overflow-x: auto;
+
+            .one {
+                margin-left: rem(12);
+
+                .top {
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    margin-top: rem(3);
+                    width: rem(61);
+                    height: rem(67);
+
+                    img {
+                        width: rem(61);
+                        height: rem(48);
+                    }
+
+                    p {
+                        width: rem(80);
+                        // height: rem();
+                        font-size: rem(12);
+                        line-height: rem(15);
+                        color: rgb(102, 102, 102);
+                        margin-top: rem(4);
+                        text-align: center;
+                    }
+                }
+
+                .bottom {
+                    @extend .top;
+                    margin-top: rem(13);
+                }
+            }
+        }
+    }
+}
+// 热门推荐
+.zhong {
+    width: 100%;
+    height: rem(373);
+    background-color: rgb(242, 242, 242);
+    overflow: hidden;
+
+    >.z-nr {
+        width: rem(357);
+        height: rem(363);
+        border-top-left-radius: rem(12);
+        border-top-right-radius: rem(12);
+        background: rgb(255, 255, 255);
+        // margin: 0 rem(9);
+        display: flex;
+        margin: rem(10) auto;
+
+        >.left {
+            width: rem(170);
+            height: rem(363);
+            // background: yellow;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 rem(10);
+
+            >.two {
+                width: rem(80);
+                height: rem(121);
+                margin: 0 auto;
+
+                >.l-t {
+                    width: rem(87);
+                    height: rem(20);
+                    margin-top: rem(10);
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                >.l-b {
+                    width: rem(70);
+                    height: rem(85);
+                    background: rgb(253, 245, 242);
+                    position: relative;
+                    border-radius: 5px;
+                    margin-top: rem(5);
+
+                    // margin-top: rem(10);
+                    >p {
+                        color: rgb(254, 78, 80);
+                        font-size: rem(13);
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    >img {
+                        width: rem(62);
+                        height: rem(62);
+                        margin: rem(6) 0 0 rem(4);
+
+                        // background: rgb(253, 245, 242);
+
+                    }
+
+                    >.back {
+                        width: rem(62);
+                        height: rem(62);
+                        position: absolute;
+                        top: rem(22);
+                        left: rem(4);
+                        background-color: rgba(214, 67, 0, 0.05);
+                    }
+                }
+            }
+
+            >.three {
+                width: rem(80);
+                height: rem(121);
+                margin: 0 auto;
+
+                >.l-t {
+                    width: rem(170);
+                    height: rem(20);
+                    margin-top: rem(10);
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                >.l-b {
+                    border-radius: 5px;
+                    width: rem(70);
+                    height: rem(85);
+                    // background: rgb(253, 245, 242);
+                    position: relative;
+                    margin-top: rem(5);
+
+                    >p {
+                        color: rgb(249, 165, 0);
+                        font-size: rem(13);
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    >img {
+                        width: rem(62);
+                        height: rem(62);
+                        margin: rem(6) 0 0 rem(4);
+                        // background: rgb(253, 245, 242);
+                    }
+
+                    >.back {
+                        width: rem(62);
+                        height: rem(62);
+                        position: absolute;
+                        top: rem(22);
+                        left: rem(4);
+                        background-color: rgba(214, 67, 0, 0.05);
+                    }
+                }
+            }
+
+            >.fore {
+                width: rem(80);
+                height: rem(121);
+                margin: 0 auto;
+
+                >.l-b {
+                    width: rem(70);
+                    height: rem(85);
+                    // background: rgb(253, 245, 242);
+                    position: relative;
+                    border-radius: 5px;
+                    margin-top: rem(5);
+
+                    >p {
+                        color: rgb(249, 165, 0);
+                        font-size: rem(13);
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    >img {
+                        width: rem(62);
+                        height: rem(62);
+                        margin: rem(6) 0 0 rem(4);
+                        // background: rgb(253, 245, 242);
+                        margin-top: rem(50);
+                    }
+                }
+            }
+
+            >.five {
+                width: rem(80);
+                height: rem(121);
+                margin: 0 auto;
+
+                >.l-t {
+                    width: rem(170);
+                    height: rem(20);
+                    margin-top: rem(10);
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+
+                >.l-b {
+                    width: rem(70);
+                    height: rem(85);
+                    background: rgb(253, 245, 242);
+                    position: relative;
+                    border-radius: 5px;
+                    margin-top: rem(5);
+
+                    >p {
+                        color: rgb(249, 165, 0);
+                        font-size: rem(13);
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    >img {
+                        width: rem(62);
+                        height: rem(62);
+                        margin: rem(6) 0 0 rem(4);
+                        background: rgb(253, 245, 242);
+                    }
+
+                    >.back {
+                        width: rem(62);
+                        height: rem(62);
+                        position: absolute;
+                        top: rem(22);
+                        left: rem(4);
+                        background-color: rgba(214, 67, 0, 0.05);
+                    }
+                }
+            }
+        }
+
+        >.right {
+            border-left: 1px #ccc solid;
+            width: rem(177);
+            height: rem(363);
+
+            // overflow: hidden;
+            // background: yellowgreen;
+            >.six {
+                width: 100%;
+                height: rem(108);
+                margin-top: rem(10);
+
+                >.l-t {
+                    width: 100%;
+                    height: rem(45);
+                    float: left;
+
+                    >img {
+                        width: 100%;
+                        height: rem(20);
+                    }
+
+                    >p {
+                        width: rem(80);
+                        font-size: rem(13);
+                        font-weight: 600;
+                        color: rgb(255, 80, 125);
+                        padding: 0 13px;
+                    }
+                }
+
+                >.l-b {
+                    float: left;
+                    width: 100%;
+                    height: rem(75);
+                    position: relative;
+
+                    >img:nth-child(1) {
+                        width: rem(62);
+                        height: rem(62);
+                        margin-left: rem(10);
+                        margin-bottom: rem(10);
+                    }
+
+                    >img:nth-child(2) {
+                        width: rem(75);
+                        height: rem(75);
+                        position: absolute;
+                        right: rem(10);
+                        top: rem(-16);
+                    }
+                }
+            }
+
+            >.seven {
+                width: 100%;
+                height: rem(108);
+                margin-top: rem(10);
+
+                >.l-t {
+                    width: 100%;
+                    height: rem(45);
+                    float: left;
+
+                    >img {
+                        width: 100%;
+                        height: rem(20);
+                    }
+
+                    >p {
+                        width: rem(80);
+                        font-size: rem(13);
+                        font-weight: 600;
+                        color: rgb(255, 80, 125);
+                        padding: 0 13px;
+                    }
+                }
+
+                >.l-b {
+                    float: left;
+                    width: 100%;
+                    height: rem(62);
+                    position: relative;
+
+                    >img:nth-child(1) {
+                        width: rem(62);
+                        margin-left: rem(10);
+                        margin-bottom: rem(10);
+                    }
+
+                    >img:nth-child(2) {
+                        width: rem(75);
+                        height: rem(75);
+                        position: absolute;
+                        right: rem(5);
+                        top: rem(-16);
+                    }
+                }
+            }
+
+            >.eight {
+                width: 100%;
+                height: rem(118);
+                margin-top: rem(10);
+
+                >.l-t {
+                    width: 100%;
+                    height: rem(45);
+                    float: left;
+
+                    >img {
+                        width: 100%;
+                        height: rem(20);
+                    }
+
+                    >p {
+                        width: rem(80);
+                        font-size: rem(13);
+                        font-weight: 600;
+                        color: rgb(255, 80, 125);
+                        padding: 0 13px;
+                    }
+                }
+
+                >.l-b {
+                    float: left;
+                    width: 100%;
+                    height: rem(72);
+                    position: relative;
+
+                    >img:nth-child(1) {
+                        width: rem(62);
+                        margin-left: rem(10);
+                        margin-bottom: rem(10);
+                    }
+
+                    >img:nth-child(2) {
+                        width: rem(75);
+                        height: rem(75);
+                        position: absolute;
+                        right: rem(5);
+                        top: rem(-10);
+                    }
+                }
+            }
+        }
+    }
+}
+// 淘宝头条
+.tbtt {
+    width: 100%;
+    height: rem(41);
+    background: #f2f2f2;
+
+    >.toutiao {
+        width: rem(357);
+        height: rem(41);
+        margin: 0 auto;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        >img {
+            width: rem(64);
+            height: rem(20);
+            float: left;
+            margin-top: rem(10);
+            margin-left: rem(15);
+        }
+
+        >.ospan {
+            width: rem(38);
+            height: rem(20);
+            line-height: rem(20);
+            background: #feefec;
+            color: #e86217;
+            border-radius: 4px;
+            // display: block;
+            display: inline-block;
+            text-align: center;
+            margin-top: rem(10);
+            margin-left: rem(10);
+        }
+
+        >div {
+            font-size: rem(12);
+            color: #313131;
+            margin-left: rem(5);
+            display: inline-block;
+        }
+    }
+}
+// 你可能喜欢图
+.tu {
+    width: 100%;
+    height: rem(47);
+    background: #f2f2f2;
+
+    >.tu_c {
+        width: rem(360);
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        >img {
+            width: rem(161);
+            height: rem(19);
+            margin: rem(13) auto;
+            display: block;
+        }
+    }
+}
+// 商品
+.text {
+    width: 100%;
+    background: #f2f2f2;
+
+    >.text_c {
+        width: rem(360);
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+
+        >.item {
+            width: rem(171);
+            height: rem(260);
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            flex-shrink: 0;
+            margin-top: rem(9);
+            border-radius: rem(6);
+            margin-left: rem(4.5);
+            margin-right: rem(4.5);
+            overflow: hidden;
+
+            >.top {
+                width: rem(171);
+                height: rem(171);
+                display: block;
+                align-items: center;
+                justify-content: center;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            >.bottom {
+                width: rem(171);
+                height: rem(89);
+                display: block;
+
+                >div {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    color: #333;
+                    font-size: rem(13);
+                    padding: 0 rem(10);
+                    margin-top: rem(15);
+                }
+
+                >p {
+                    margin-top: rem(15);
+                    padding: 0 rem(10);
+
+                    >span:nth-child(1) {
+                        color: #ff5500;
+                        font-size: rem(12);
+                    }
+
+                    >span:nth-child(2) {
+                        color: #ff5500;
+                        font-size: rem(14);
+                    }
+
+                    >span:nth-child(3) {
+                        color: #999999;
+                        font-size: rem(12);
+                    }
+                }
+            }
+        }
+    }
+
+}
+.kong{
+    width: 100%;
+    height: rem(42);
+}
+// 底部导航
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: rem(2);
+    border-top: 1px solid #ccc;
+    >span {
+        display: block;
+        text-align: center;
+
+        >span {
+            font-size: rem(22);
+        }
+
+        >p {
+            font-size: rem(12);
+            transform: scale(0.8);
+        }
+    }
+    >a{
+        color: #000;
+        >span {
+            display: block;
+            text-align: center;
+    
+            >span {
+                font-size: rem(22);
+            }
+    
+            >p {
+                font-size: rem(12);
+                transform: scale(0.8);
+            }
+        }
+    }
+
+}

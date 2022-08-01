@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.logo {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.logo > .logo_c {
+  width: 2.13333rem;
+  height: 2.13333rem;
+  margin: 1.33333rem auto;
+}
+
+.logo > .logo_c > img {
+  width: 2.13333rem;
+  height: 2.13333rem;
+}
+
+.handset {
+  width: 8.93333rem;
+  height: 0.93333rem;
+  border-bottom: 1px solid #ff5000;
+  margin-left: 18px;
+  position: relative;
+}
+
+.handset > input {
+  margin: 0 auto;
+  width: 7.33333rem;
+  height: 0.82667rem;
+  border: none;
+  outline: none;
+  margin-left: 0.48rem;
+  padding-left: 1.6rem;
+  font-size: 0.42667rem;
+  color: #333;
+  margin-top: 0.10667rem;
+}
+
+.handset > span {
+  position: absolute;
+  top: 0.29333rem;
+  left: 0.18667rem;
+  font-size: 0.4rem;
+  color: #333;
+}
+
+.handset > .tu {
+  display: block;
+  width: 1.86667rem;
+  height: 0.8rem;
+  background: url(../img/宝4.png) no-repeat;
+  background-size: 24px;
+  background-position: 1.33333rem -0.08rem;
+}
+
+.yanzheng {
+  width: 8.93333rem;
+  height: 0.93333rem;
+  border-bottom: 1px solid #ff5000;
+  position: relative;
+  margin-top: 1.06667rem;
+  margin-left: 0.53333rem;
+}
+
+.yanzheng > input {
+  margin: 0 auto;
+  width: 8rem;
+  height: 0.82667rem;
+  border: none;
+  outline: none;
+  margin-left: 0.4rem;
+  font-size: 0.42667rem;
+  color: #333;
+  margin-top: 0.10667rem;
+}
+
+.yanzheng > span {
+  width: 2.66667rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 0.26667rem;
+  right: -0.50667rem;
+  color: #ff5000;
+  font-size: 0.42667rem;
+}
+
+.dengru {
+  width: 100%;
+  height: 0.53333rem;
+  margin-top: 0.53333rem;
+}
+
+.dengru > .dengru_c {
+  width: 8.8rem;
+  height: 0.53333rem;
+  margin: 0 auto;
+}
+
+.dengru > .dengru_c > .l {
+  float: left;
+  font-size: 0.37333rem;
+  color: #555;
+}
+
+.dengru > .dengru_c > .r {
+  float: right;
+  color: #555;
+  font-size: 0.37333rem;
+}
+
+.annou {
+  width: 100%;
+  height: 1.2rem;
+}
+
+.annou > button {
+  width: 9.06667rem;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #ff9000, #ff5000) no-repeat;
+  color: #fff;
+  box-shadow: 0 2px 4px #f7c7b1;
+  height: 1.2rem;
+  border-radius: 0.93333rem;
+  margin-top: 1.06667rem;
+  font-size: 0.42667rem;
+  border: none;
+  margin-left: 0.48rem;
+}
+
+.wen {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+
+.wen > .wen_c {
+  width: 8.53333rem;
+  margin: 0 auto;
+}
+
+.wen > .wen_c > input {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  border: 2px solid #e9e9e9;
+}
+
+.wen > .wen_c > span {
+  color: #666;
+  font-size: 0.37333rem;
+}
+
+.wen > .wen_c > .a {
+  color: #ff5000;
+  font-size: 0.37333rem;
+}
+
+.dktb {
+  width: 3.09333rem;
+  height: 0.96rem;
+  background-color: #ff5000;
+  font-size: 0.37333rem;
+  color: #fff;
+  border-radius: 0.53333rem;
+  display: block;
+  text-align: center;
+  border: none;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: 4rem;
+  left: 30%;
+  z-index: 999;
+}

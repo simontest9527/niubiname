@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+// 声明函数将px装化成为rem。
+@function rem($px) {
+    @return $px/37.5 * 1rem;
+}
+// logo图
+.logo {
+    width: 100%;
+    height: rem(150);
+    // margin-top: rem();
+    overflow: hidden;
+
+    >.logo_c {
+        width: rem(80);
+        height: rem(80);
+        margin: rem(50) auto;
+
+        >img {
+            width: rem(80);
+            height: rem(80);
+        }
+    }
+}
+// 手机号框
+.handset {
+    width: rem(335);
+    height: rem(35);
+    border-bottom: 1px solid #ff5000;
+    // margin-left: rem(18);
+    margin-left: 18px;
+    position: relative;
+    // margin: 0 auto;
+
+    >input {
+        margin: 0 auto;
+        width: rem(275);
+        height: rem(31);
+        border: none;
+        outline: none;
+        // border-bottom: 1px solid #ff5000;
+        margin-left: rem(18);
+        padding-left: rem(60);
+        font-size: rem(16);
+        color: #333;
+        margin-top: rem(4);
+    }
+
+    >span {
+        position: absolute;
+        top: rem(11);
+        left: rem(7);
+        font-size: rem(15);
+        color: #333;
+    }
+
+    >.tu {
+        display: block;
+        width: rem(70);
+        height: rem(30);
+        background: url(../img/宝4.png) no-repeat;
+        background-size: 24px;
+        background-position: rem(50) rem(-3);
+    }
+}
+// 验证码框
+.yanzheng {
+    width: rem(335);
+    height: rem(35);
+    border-bottom: 1px solid #ff5000;
+    position: relative;
+    margin-top: rem(40);
+    margin-left: rem(20);
+
+    >input {
+        margin: 0 auto;
+        width: rem(300);
+        height: rem(31);
+        border: none;
+        outline: none;
+        margin-left: rem(15);
+        font-size: rem(16);
+        color: #333;
+        margin-top: rem(4);
+    }
+
+    >span {
+        width: rem(100);
+        height: rem(30);
+        position: absolute;
+        top: rem(10);
+        right: rem(-19);
+        color: #ff5000;
+        font-size: rem(16);
+    }
+}
+// 登入栏
+.dengru {
+    width: 100%;
+    height: rem(20);
+    margin-top: rem(20);
+
+    >.dengru_c {
+        width: rem(330);
+        height: rem(20);
+        margin: 0 auto;
+
+        >.l {
+            float: left;
+            font-size: rem(14);
+            color: #555;
+        }
+
+        >.r {
+            float: right;
+            color: #555;
+            font-size: rem(14);
+
+        }
+    }
+}
+// 登入按钮
+.annou {
+    width: 100%;
+    height: rem(45);
+
+    // margin: 0 auto;
+    >button {
+        width: rem(340);
+        height: 100%;
+        background: -webkit-linear-gradient(left, #ff9000, #ff5000) no-repeat;
+        color: #fff;
+        box-shadow: 0 2px 4px #f7c7b1;
+        height: rem(45);
+        border-radius: rem(35);
+        margin-top: rem(40);
+        font-size: rem(16);
+        border: none;
+        margin-left: rem(18);
+    }
+}
+// 协议
+.wen {
+    width: 100%;
+    // height: rem();
+    margin-top: rem(60);
+
+    >.wen_c {
+        width: rem(320);
+        // height: rem();
+        margin: 0 auto;
+
+        >input {
+            width: rem(15);
+            height: rem(15);
+            border-radius: 50%;
+            border: 2px solid #e9e9e9;
+        }
+
+        >span {
+            color: #666;
+            font-size: rem(14);
+        }
+
+        >.a {
+            color: #ff5000;
+            font-size: rem(14);
+        }
+    }
+}
+// 打开淘宝按钮
+.dktb {
+    width: rem(116);
+    height: rem(36);
+    // box-shadow: rgb(18 18 18 / 25%) 0px 2px 5px;
+    background-color: rgb(255, 80, 0);
+    font-size: rem(14);
+    color: #fff;
+    border-radius: rem(20);
+    display: block;
+    text-align: center;
+    border: none;
+    align-items: center;
+    font-weight: bold;
+    position: fixed;
+    // bottom: rem(57);
+    bottom: rem(150);
+    left: 30%;
+    z-index: 999;
+}
